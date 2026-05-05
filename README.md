@@ -12,6 +12,7 @@ name        : Pet Adoption Center
 type        : multi-page frontend website
 stack       : HTML5, CSS3
 status      : active , upgrading with JavaScript
+version     : 1.0.0
 ~~~
 
 ---
