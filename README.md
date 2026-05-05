@@ -1,6 +1,6 @@
 # Pet Adoption Center 
 
-A multi-page frontend website built around a pet adoption use case —
+A multi-page frontend website built around a pet adoption use case ,
 focused on real-world HTML & CSS structure, responsive design, and
 clean page organization.
 
@@ -11,7 +11,7 @@ clean page organization.
 name        : Pet Adoption Center
 type        : multi-page frontend website
 stack       : HTML5, CSS3
-status      : active — upgrading with JavaScript
+status      : active , upgrading with JavaScript
 ~~~
 
 ---
@@ -41,7 +41,19 @@ styling     : CSS3 (Flexbox, Grid, responsive layout)
 - building responsive layouts with pure CSS
 - maintaining consistent styling across pages
 ~~~
+## site.preview
 
+### home
+![home](./Resources/Screenshots/homepage.png)
+
+### pets
+![pets](./Resources/Screenshots/petspage.png)
+
+### adopt
+![adopt](./Resources/Screenshots/adoptionpage.png)
+
+### contact
+![contact](./Resources/Screenshots/contactpage.png)
 ---
 
 ## current.state
