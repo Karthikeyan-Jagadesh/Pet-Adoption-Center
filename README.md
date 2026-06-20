@@ -90,15 +90,6 @@ Then visit `http://localhost:8000`
 
 ---
 
-## Deploy to GitHub Pages
-
-1. Push the repo to GitHub
-2. Go to **Settings → Pages**
-3. Set source to `main` branch, root `/`
-4. Your site will be live at `https://<username>.github.io/Pet-Adoption-Center/`
-
----
-
 ## Preview
 
 Screenshots are available in `Resources/Screenshots/`.
