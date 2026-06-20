@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Pets | Pet Adoption Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body data-page="pets" data-image-prefix="../">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Pet Adoption <span>Center</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="../index.html" data-nav="home">Home</a></li>
+          <li><a href="pets.html" data-nav="pets">Pets</a></li>
+          <li><a href="how-it-works.html" data-nav="how-it-works">How It Works</a></li>
+          <li><a href="success-stories.html" data-nav="success-stories">Success Stories</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="adopt.html" class="btn btn-accent btn-sm header-cta">Adopt Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Find your match</span>
+        <h1>Available pets for adoption</h1>
+        <p>Search and filter by species, age, and size to find a companion that fits your home and lifestyle.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <div class="filter-group">
+            <label for="pet-search">Search</label>
+            <input type="search" id="pet-search" placeholder="Search by name or breed">
+          </div>
+          <div class="filter-group">
+            <label for="species-filter">Species</label>
+            <select id="species-filter">
+              <option value="all">All</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="age-filter">Age</label>
+            <select id="age-filter">
+              <option value="all">All</option>
+              <option value="young">Young</option>
+              <option value="adult">Adult</option>
+              <option value="senior">Senior</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="size-filter">Size</label>
+            <select id="size-filter">
+              <option value="all">All</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card-grid" id="pets-grid"></div>
+        <div class="empty-state" id="pets-empty">
+          <h3>No pets match your filters</h3>
+          <p>Try adjusting your search or filters to see more available companions.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo">Pet Adoption <span>Center</span></a>
+        <p style="margin-top: 1rem;">Connecting rescued pets with families who care. Every adoption creates a second chance.</p>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="pets.html">Available Pets</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="success-stories.html">Success Stories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Adopt</h4>
+        <ul class="footer-links">
+          <li><a href="adopt.html">Apply Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:petadoptionsservice@gmail.com">petadoptionsservice@gmail.com</a></li>
+          <li><a href="tel:+919XXXXXXXX">+91 9XXXX 3XXXX</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Pet Adoption Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pets.js"></script>
+</body>
+</html>

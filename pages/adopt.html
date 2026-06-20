@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Pet | Pet Adoption Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/adopt.css">
+</head>
+<body data-page="adopt" data-image-prefix="../">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Pet Adoption <span>Center</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="../index.html" data-nav="home">Home</a></li>
+          <li><a href="pets.html" data-nav="pets">Pets</a></li>
+          <li><a href="how-it-works.html" data-nav="how-it-works">How It Works</a></li>
+          <li><a href="success-stories.html" data-nav="success-stories">Success Stories</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="adopt.html" class="btn btn-accent btn-sm header-cta">Adopt Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Start your journey</span>
+        <h1>Adoption application</h1>
+        <p>Tell us about yourself and the pet you'd like to adopt. We'll review your application and get back to you within 2–3 business days.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="form-layout">
+          <aside class="summary-panel">
+            <h3>Pet summary</h3>
+            <div id="pet-summary" class="pet-summary-placeholder">
+              <p>Select a pet from our listings or enter a name below.</p>
+            </div>
+            <hr style="border: none; border-top: 1px solid var(--color-border); margin: 1.5rem 0;">
+            <h4>What happens next?</h4>
+            <p>After submission, our team will contact you to schedule a meet-and-greet and discuss next steps.</p>
+          </aside>
+
+          <div class="form-panel">
+            <form id="adoption-form" novalidate>
+              <div class="form-field">
+                <label for="adopterName">Full name</label>
+                <input type="text" id="adopterName" name="adopterName" autocomplete="name" required>
+                <span class="error" id="adopterName-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="adopterEmail">Email address</label>
+                <input type="email" id="adopterEmail" name="adopterEmail" autocomplete="email" required>
+                <span class="error" id="adopterEmail-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="adopterPhone">Phone number</label>
+                <input type="tel" id="adopterPhone" name="adopterPhone" autocomplete="tel" required>
+                <span class="error" id="adopterPhone-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="pet">Pet name</label>
+                <input type="text" id="pet" name="pet" placeholder="e.g. Max" required>
+                <span class="error" id="pet-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="adopterMessage">Why do you want to adopt this pet?</label>
+                <textarea id="adopterMessage" name="adopterMessage" rows="5" placeholder="Share your experience with pets and what kind of home you can provide." required></textarea>
+                <span class="error" id="adopterMessage-error"></span>
+              </div>
+              <button type="submit" class="btn btn-accent" style="width: 100%;">Submit application</button>
+            </form>
+
+            <div class="form-success" id="form-success">
+              <div class="icon">✓</div>
+              <h2>Application received</h2>
+              <p>Thank you, <strong id="success-name"></strong>. We've received your application for <strong id="success-pet"></strong>.</p>
+              <p>Our team will reach out within 2–3 business days with next steps.</p>
+              <a href="pets.html" class="btn btn-outline" style="margin-top: 1rem;">Browse more pets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo">Pet Adoption <span>Center</span></a>
+        <p style="margin-top: 1rem;">Connecting rescued pets with families who care. Every adoption creates a second chance.</p>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="pets.html">Available Pets</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="success-stories.html">Success Stories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Adopt</h4>
+        <ul class="footer-links">
+          <li><a href="adopt.html">Apply Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:petadoptionsservice@gmail.com">petadoptionsservice@gmail.com</a></li>
+          <li><a href="tel:+919XXXXXXXX">+91 9XXXX 3XXXX</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Pet Adoption Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/adopt.js"></script>
+</body>
+</html>

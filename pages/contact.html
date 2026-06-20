@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Pet Adoption Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Pet Adoption <span>Center</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="../index.html" data-nav="home">Home</a></li>
+          <li><a href="pets.html" data-nav="pets">Pets</a></li>
+          <li><a href="how-it-works.html" data-nav="how-it-works">How It Works</a></li>
+          <li><a href="success-stories.html" data-nav="success-stories">Success Stories</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="adopt.html" class="btn btn-accent btn-sm header-cta">Adopt Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Get in touch</span>
+        <h1>Contact us</h1>
+        <p>Have questions about adoption, volunteering, or visiting the center? We're here to help.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="info-card">
+          <h3>Visit us</h3>
+          <p>Pet Adoption Center<br>Abc Street, Xyz City<br>India</p>
+        </div>
+        <div class="info-card">
+          <h3>Call or email</h3>
+          <p><a href="tel:+919XXXXXXXX">+91 9XXXX 3XXXX</a><br><a href="mailto:petadoptionsservice@gmail.com">petadoptionsservice@gmail.com</a></p>
+        </div>
+        <div class="info-card">
+          <h3>Hours</h3>
+          <p>Mon – Fri: 9 AM – 5 PM<br>Sat – Sun: 9 AM – 8 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div class="form-panel">
+          <h2>Send a message</h2>
+          <form id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="contactName">Your name</label>
+              <input type="text" id="contactName" required>
+              <span class="error" id="contactName-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" required>
+              <span class="error" id="contactEmail-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" required>
+                <option value="">Select a topic</option>
+                <option value="adoption">Adoption inquiry</option>
+                <option value="visit">Schedule a visit</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error" id="contactSubject-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="5" required></textarea>
+              <span class="error" id="contactMessage-error"></span>
+            </div>
+            <button type="submit" class="btn btn-accent" style="width: 100%;">Send message</button>
+          </form>
+          <div class="form-success" id="contact-success">
+            <div class="icon">✓</div>
+            <h2>Message sent</h2>
+            <p>Thanks for reaching out. We'll respond within 1–2 business days.</p>
+          </div>
+        </div>
+
+        <div class="summary-panel">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>How long does adoption take?</summary>
+              <p>Most adoptions are completed within 1–2 weeks, depending on scheduling and application review.</p>
+            </details>
+            <details>
+              <summary>Can I visit before applying?</summary>
+              <p>Yes. You're welcome to visit during open hours to meet pets and speak with our team.</p>
+            </details>
+            <details>
+              <summary>Is there an adoption fee?</summary>
+              <p>A modest fee covers vaccinations, spay/neuter, and basic medical care. We'll share details during your visit.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo">Pet Adoption <span>Center</span></a>
+        <p style="margin-top: 1rem;">Connecting rescued pets with families who care. Every adoption creates a second chance.</p>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="pets.html">Available Pets</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="success-stories.html">Success Stories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Adopt</h4>
+        <ul class="footer-links">
+          <li><a href="adopt.html">Apply Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:petadoptionsservice@gmail.com">petadoptionsservice@gmail.com</a></li>
+          <li><a href="tel:+919XXXXXXXX">+91 9XXXX 3XXXX</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Pet Adoption Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.getElementById("contact-form")?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      let valid = true;
+
+      const fields = [
+        { id: "contactName", check: (v) => v.trim().length > 0, msg: "Please enter your name." },
+        { id: "contactEmail", check: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v), msg: "Please enter a valid email." },
+        { id: "contactSubject", check: (v) => v.trim().length > 0, msg: "Please select a subject." },
+        { id: "contactMessage", check: (v) => v.trim().length >= 10, msg: "Please enter at least 10 characters." },
+      ];
+
+      fields.forEach(({ id, check, msg }) => {
+        const input = document.getElementById(id);
+        const field = input?.closest(".form-field");
+        const error = document.getElementById(`${id}-error`);
+        const value = input?.value || "";
+
+        if (!check(value)) {
+          valid = false;
+          field?.classList.add("invalid");
+          if (error) error.textContent = msg;
+        } else {
+          field?.classList.remove("invalid");
+          if (error) error.textContent = "";
+        }
+      });
+
+      if (!valid) return;
+
+      document.getElementById("contact-form").hidden = true;
+      document.getElementById("contact-success")?.classList.add("visible");
+    });
+  </script>
+</body>
+</html>

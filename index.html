@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
+</head>
+<body data-page="home" data-image-prefix="">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Pet Adoption <span>Center</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="pages/pets.html" data-nav="pets">Pets</a></li>
+          <li><a href="pages/how-it-works.html" data-nav="how-it-works">How It Works</a></li>
+          <li><a href="pages/success-stories.html" data-nav="success-stories">Success Stories</a></li>
+          <li><a href="pages/contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="pages/adopt.html" class="btn btn-accent btn-sm header-cta">Adopt Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Find your companion</span>
+          <h1>Every pet deserves a loving home</h1>
+          <p>We connect rescued animals with caring families through a simple, transparent adoption process built on trust and compassion.</p>
+          <div class="hero-actions">
+            <a href="pages/pets.html" class="btn btn-accent">Browse Available Pets</a>
+            <a href="pages/how-it-works.html" class="btn btn-outline">How Adoption Works</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="Resources/Images/home1.avif" alt="Happy dog looking at the camera">
+          <div class="hero-badge">
+            <strong>120+</strong>
+            <span>Pets rescued this year</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stat-grid">
+          <div class="stat-card">
+            <strong>120+</strong>
+            <span>Animals rescued</span>
+          </div>
+          <div class="stat-card">
+            <strong>85</strong>
+            <span>Successful adoptions</span>
+          </div>
+          <div class="stat-card">
+            <strong>12</strong>
+            <span>Active volunteers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Simple process</span>
+          <h2>Adoption in three clear steps</h2>
+          <p>From browsing profiles to bringing your pet home, we guide you at every stage.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Browse &amp; connect</h3>
+            <p>Explore our pets, filter by preferences, and choose a companion that fits your lifestyle.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Apply online</h3>
+            <p>Submit a short adoption form. Our team reviews applications within 2–3 business days.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Welcome home</h3>
+            <p>Meet your pet, finalize paperwork, and start your new chapter together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Featured friends</span>
+          <h2>Meet pets looking for homes</h2>
+          <p>A few of our current residents ready to meet you.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card featured-pet">
+            <img src="Resources/Images/image1.jfif" alt="Max the Golden Retriever">
+            <div class="card-body">
+              <h3>Max</h3>
+              <p class="pet-meta">Golden Retriever · Adult</p>
+              <a href="pages/adopt.html?pet=Max" class="btn btn-accent btn-sm">Meet Max</a>
+            </div>
+          </article>
+          <article class="card featured-pet">
+            <img src="Resources/Images/image2.jfif" alt="Bella the Beagle">
+            <div class="card-body">
+              <h3>Bella</h3>
+              <p class="pet-meta">Beagle · Young</p>
+              <a href="pages/adopt.html?pet=Bella" class="btn btn-accent btn-sm">Meet Bella</a>
+            </div>
+          </article>
+          <article class="card featured-pet">
+            <img src="Resources/Images/home2.jpg" alt="Milo the Tabby cat">
+            <div class="card-body">
+              <h3>Milo</h3>
+              <p class="pet-meta">Tabby Cat · Young</p>
+              <a href="pages/adopt.html?pet=Milo" class="btn btn-accent btn-sm">Meet Milo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Ready to change a life?</h2>
+          <p>Start your adoption journey today or read stories from families who already found their match.</p>
+          <div class="hero-actions" style="justify-content: center; margin-top: 1.5rem;">
+            <a href="pages/adopt.html" class="btn btn-accent">Start Application</a>
+            <a href="pages/success-stories.html" class="btn btn-outline" style="color: #fff; border-color: #525252;">Read Success Stories</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">Pet Adoption <span>Center</span></a>
+        <p style="margin-top: 1rem;">Connecting rescued pets with families who care. Every adoption creates a second chance.</p>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="pages/pets.html">Available Pets</a></li>
+          <li><a href="pages/how-it-works.html">How It Works</a></li>
+          <li><a href="pages/success-stories.html">Success Stories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Adopt</h4>
+        <ul class="footer-links">
+          <li><a href="pages/adopt.html">Apply Now</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 1rem;">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:petadoptionsservice@gmail.com">petadoptionsservice@gmail.com</a></li>
+          <li><a href="tel:+919XXXXXXXX">+91 9XXXX 3XXXX</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Pet Adoption Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
